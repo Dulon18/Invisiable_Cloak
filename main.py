@@ -39,7 +39,9 @@ while (cap.isOpened()):
     # Replacing pixels corresponding to cloak with the background pixels.
 
     img[np.where(mask == 255)] = background[np.where(mask == 255)]
-    cv2.imshow('Display', img)
+    
+    #Display 
+    cv2.imshow('Invisiable Cloak', img)
     k = cv2.waitKey(10)
     if k == 27:
         break
